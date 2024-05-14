@@ -1,0 +1,60 @@
+{
+    "primary_key": "id",
+    "alternate_keys": [
+        "credit_card_number"
+    ],
+    "columns": {
+        "id": {
+            "sdtype": "id",
+            "regex_format": "ID_[0-9]{10}"
+        },
+        "first_name": {
+            "sdtype": "first_name",
+            "pii": true
+        },
+        "last_name": {
+            "sdtype": "last_name",
+            "pii": true
+        },
+        "ssn": {
+            "sdtype": "ssn",
+            "pii": true
+        },
+        "guest_email": {
+            "sdtype": "email",
+            "pii": true
+        },
+        "has_rewards": {
+            "sdtype": "boolean"
+        },
+        "room_type": {
+            "sdtype": "categorical"
+        },
+        "amenities_fee": {
+            "sdtype": "numerical"
+        },
+        "checkin_date": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        },
+        "checkout_date": {
+            "sdtype": "datetime",
+            "datetime_format": "%Y-%m-%d"
+        },
+        "room_rate": {
+            "sdtype": "numerical"
+        },
+        "billing_address": {
+            "sdtype": "address",
+            "pii": true
+        },
+        "credit_card_number": {
+            "sdtype": "credit_card_number",
+            "pii": true
+        },
+        "user_city": {
+            "sdtype": "city",
+            "pii": false
+        }
+    }
+}
